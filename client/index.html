@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<div class="chat-wrap">
+    <div class="chat">
+        <div class="messages" id="messages"></div>
+
+        <div class="panel">
+            <span class="nick"></span> <input type="text" name="message_text" id="message_text">
+            <button type="button" id="message_btn">Отправить</button>
+        </div>
+    </div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://localhost:8008/socket.io/socket.io.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
