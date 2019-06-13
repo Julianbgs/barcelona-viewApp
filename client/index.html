@@ -8,15 +8,49 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<section class="city">
+    <div class="container">
+        <div class="city__box">
+            <div class="city__wrap-img">
+                <img src="img/Barcelona.png" alt="Barcelona">
+            </div>
+            <div class="city__wrap-descr">
+                <h1 class="city__title"> Барселона — обзор города </h1>
+                <p class="city__descr"> Барселона с её золотистыми пляжами, архитектурными шедеврами Гауди,
+                    многочисленными фестивалями и гастрономическим разнообразием понравилась мне в первый же день
+                    пребывания и стала местом, в котором... </p>
+                <a href="#" class="city__link"> Читать дальше </a>
+            </div>
+        </div>
+    </div>
+</section>
 
+<section class="review">
+    <div class="container">
+        <div class="review__box">
+            <h3 class="review__title"> Отзывы о Барселоне </h3>
+            <div class="review__slider">
+                <div class="review__slide">
+                    <div class="review__slide-top">
+                        <img class="review__slide-top--img" src="img/slide-face.png">
+                        <p class="review__slide-top--title"> Наталья Полянская</p>
+                    </div>
 
-<div class="chat-wrap">
-    <div class="chat">
-        <div class="messages" id="messages"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <div class="panel">
-            <span class="nick"></span> <input type="text" name="message_text" id="message_text">
-            <button type="button" id="message_btn">Отправить</button>
+<div class="container">
+    <div class="chat-wrap">
+        <div class="chat">
+            <div class="messages" id="messages"></div>
+
+            <div class="panel">
+                <span class="nick"></span> <input type="text" name="message_text" id="message_text">
+                <button type="button" id="message_btn">Отправить</button>
+            </div>
         </div>
     </div>
 </div>
