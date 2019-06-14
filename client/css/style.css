@@ -322,6 +322,7 @@ body {
     width: 100%;
     background-color: white;
     padding-top: 15px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .chat__top-box {
@@ -346,6 +347,10 @@ body {
 
 .chat__top-user {
     width: 77%;
+}
+
+.chat__top-rating {
+    margin-top: 15px;
 }
 
 .chat__top-user--title {
@@ -378,11 +383,7 @@ body {
     left: -10px;
     background-image: url("../img/flag.png");
     background-repeat: no-repeat;
-
-
 }
-
-
 
 .chat-wrap {
     width: 45%;
@@ -394,29 +395,96 @@ body {
 }
 
 .chat .messages{
-    height: 300px;
-    border: 1px solid #d4d4d4;
+    height: 315px;
+    background-color: white;
     overflow-y: scroll;
     overflow-x: hidden;
     padding: 5px;
 }
 
-.chat .messages .user{
-    color: #B22222;
-}
-
-.chat .message{
-    width: 70%;
-}
-
 .chat .panel{
-    margin-top: 8px;
+    background-color: white;
+    border-top: 1px solid #ECECEC;
+    padding: 26px 19px 28px 26px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
 }
 
-#message_text{
-    width: 60%;
-    display: inline-block;
-    margin-left: 8px;
+.chat__message {
+    padding: 14px 24px;
+    box-sizing: border-box;
+    font-family: KievitPro;
+    font-size: 12px;
+    line-height: 24px;
+    color: #A3A2A2;
+}
+
+.chat__btn {
+    border: none;
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/send.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.msg {
+    width: 100%;
+    padding: 5px 0;
+}
+
+.user {
+    font-family: KievitPro;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FF4641;
+}
+
+.msg-text {
+    font-family: KievitPro;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.rating .stars {
+    position: relative;
+    display: block;
+    float: left;
+    height: 20px;
+    width: 65px;
+    background-image: url("../img/stars.png");
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    margin-right: 5px;
+}
+.rating .stars .on {
+    background-image: url("../img/stars-empty.png");
+
+}
+.rating .stars .live {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.rating .stars .live span {
+    display: block;
+    float: left;
+    cursor: pointer;
+    width: 13px;
+    height: 12px;
+    background-image: url("../img/stars-empty.png");
+    background-repeat: no-repeat;
+    background-position: 0 -20px;
+}
+.rating .stars .live span:hover ~ span {
+    background-position: 0 0px;
+}
+.rating .stars .live:hover {
+    opacity: 1;
 }
 
 @font-face {

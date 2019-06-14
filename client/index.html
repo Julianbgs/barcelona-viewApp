@@ -360,25 +360,50 @@
                             </div>
                         </div>
                         <div class="chat__top-rating">
-                            <p>рейтинг</p>
+                            <div class="rating">
+                                <div class="stars">
+                                    <div class="on" style="width: 88%;"></div>
+                                    <div class="live">
+                                        <span data-rate="1"></span>
+                                        <span data-rate="2"></span>
+                                        <span data-rate="3"></span>
+                                        <span data-rate="4"></span>
+                                        <span data-rate="5"></span>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                     <div class="messages" id="messages"></div>
 
                     <div class="panel">
-                        <span class="nick"></span> <input type="text" name="message_text" id="message_text">
-                        <button type="button" id="message_btn">Отправить</button>
+                        <span class="nick" id="user"></span>
+                        <input type="text" name="message_text" class="chat__message" id="message_text"  placeholder="Напишите сообщение...">
+                        <button type="button"  class="chat__btn" id="message_btn"></button>
                     </div>
                 </div>
             </div>
             <div class="chat-wrap">
                 <h3 class="chat__title">Чат с администратором</h3>
                 <div class="chat__body">
+                    <div class="chat__top">
+                        <div class="chat__top-box">
+                            <div class="chat__top-box--img">
+                                <img src="img/chat-admin.png"  alt="user">
+                            </div>
+                            <div class="chat__top-user">
+                                <p class="chat__top-user--title"> Администратор</p>
+                                <p class="chat__top-user--role">TravelAsk</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="messages" id="messages-admin"></div>
 
                     <div class="panel">
-                        <span class="admin"></span> <input type="text" name="message_text" id="message_text-admin">
-                        <button type="button" id="message_btn-admin">Отправить</button>
+                        <span class="admin" id="admin"></span>
+                        <input type="text" name="message_text" class="chat__message" id="message_text-admin" placeholder="Напишите сообщение...">
+                        <button type="button" class="chat__btn" id="message_btn-admin"></button>
                     </div>
                 </div>
             </div>

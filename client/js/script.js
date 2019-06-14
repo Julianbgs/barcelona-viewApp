@@ -8,20 +8,25 @@ $('.review__slider').slick({
 
 $(document).ready(function () {
     var socket = io.connect('http://localhost:8008');
-    var name = 'Пётр';
+    var name = 'User';
     var admin = 'Admin';
     var messagesAdmin = $("#messages-admin");
     var messages = $("#messages");
     var message_txtAdmin = $("#message_text-admin");
     var message_txt = $("#message_text");
-    $('.chat__body .nick').text(name);
-    $('.chat__body .admin').text(admin);
+    var parentAdmin = document.querySelector('#admin'),
+        img = document.createElement("IMG");
+    img.src = "img/chat-admin.png";
+    parentAdmin.appendChild(img);
+    var parentUser = document.getElementById("user"),
+        img = document.createElement("IMG");
+    img.src = "img/chat-user.png";
+    parentUser.appendChild(img);
 
     function msg(nick, message) {
         var m = '<div class="msg">' +
             '<span class="user">' + safe(nick) + ':</span> '
-            + safe(message) +
-            '</div>';
+            + '<span class="msg-text">' + safe(message) + '</span>' + '</div>';
         messages
             .append(m)
     }
@@ -29,8 +34,8 @@ $(document).ready(function () {
     function msgAdmin(nick, message) {
         var msg = '<div class="msg">' +
             '<span class="user">' + safe(nick) + ':</span> '
-            + safe(message) +
-            '</div>';
+            + '<span class="msg-text">' + safe(message) + '</span>' + '</div>';
+
         messagesAdmin
             .append(msg)
     }
