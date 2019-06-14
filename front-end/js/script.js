@@ -1,9 +1,8 @@
-
-
 $(document).ready(function () {
     //slider
     $('.review__slider').slick({
         dots: true,
+        arrows: false,
         slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [
@@ -34,14 +33,6 @@ $(document).ready(function () {
     let messages = $("#messages");
     let message_txtAdmin = $("#message_text-admin");
     let message_txt = $("#message_text");
-    let parentAdmin = $('#admin'),
-    imgAdmin = document.createElement("IMG");
-    imgAdmin.src = "img/chat-admin.png";
-    parentAdmin.append(imgAdmin);
-    let parentUser = $("#user"),
-    img = document.createElement("IMG");
-    img.src = "img/chat-user.png";
-    parentUser.append(img);
 
     function msg(nick, message) {
         let msgUser = '<div class="msg">' +

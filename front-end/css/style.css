@@ -95,7 +95,7 @@ body {
 
 .review__box {
     background-color: white;
-    padding: 35px 31px;
+    padding: 35px 31px 30px 31px;
     box-sizing: border-box;
 }
 
@@ -295,6 +295,25 @@ body {
     line-height: 25px;
     color: #9D9D9D;
     margin-left: 2px;
+}
+
+.review__more {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+
+.review__more-descr {
+    font-family: KievitPro;
+    font-size: 15px;
+    line-height: 17px;
+    color: #212121;
+    border: 2px solid #FF4641;
+    padding: 14px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin-top: -5px;
 }
 
 .chat {
@@ -499,7 +518,40 @@ body {
     opacity: 1;
 }
 
-@media screen and (max-width: 660px) {
+.slick-dots {
+    bottom: -70px;
+    right: -40%;
+}
+
+.slick-dots li {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #212121;
+    padding: 1px;
+}
+
+.slick-dots li button::before {
+    display: none;
+}
+
+.slick-dots .slick-active {
+    background: #FF4641;
+    padding: 3px;
+}
+
+@media (max-width: 1024px) {
+    .slick-dots {
+        width: auto;
+        right: 15%;
+    }
+
+    .city__box {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 660px) {
     .city__wrap-img {
         width: 100%;
         height: 340px;
@@ -523,6 +575,18 @@ body {
     .chat__wrap {
         margin: 0;
         width: 100%;
+    }
+
+    .chat__wrap--mod::before {
+       display: none;
+    }
+
+    .review__box {
+        padding-right: 0;
+    }
+
+    .city {
+        margin-top: 20px;
     }
 }
 
