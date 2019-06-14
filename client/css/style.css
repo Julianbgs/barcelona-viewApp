@@ -297,8 +297,78 @@ body {
     margin-left: 2px;
 }
 
+.chat {
+    display: flex;
+    width: 100%;
+}
+
+.chat__box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.chat__title {
+    font-family: KievitPro;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.chat__top {
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+
+.chat__top-box {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+}
+
+.chat__top-box-img {
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+    margin-top: 12px;
+}
+
+.chat__top-box--img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.chat__top-user {
+    width: 77%;
+}
+
+.chat__top-user--title {
+    position: relative;
+    top: 10px;
+    font-family: KievitPro;
+    font-size: 18px;
+    line-height: 17px;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.chat__top-user--role {
+    font-family: KievitPro;
+    font-size: 13px;
+    line-height: 17px;
+    color: #FF4641;
+
+}
+
+
+
 .chat-wrap {
-    width: 600px;
+    width: 45%;
     margin: 20px auto;
     padding: 10px;
     color: #4F6B72;

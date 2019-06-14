@@ -14,8 +14,8 @@ $(document).ready(function () {
     var messages = $("#messages");
     var message_txtAdmin = $("#message_text-admin");
     var message_txt = $("#message_text");
-    $('.chat .nick').text(name);
-    $('.chat .admin').text(admin);
+    $('.chat__body .nick').text(name);
+    $('.chat__body .admin').text(admin);
 
     function msg(nick, message) {
         var m = '<div class="msg">' +
@@ -24,7 +24,6 @@ $(document).ready(function () {
             '</div>';
         messages
             .append(m)
-            .scrollTop(messages[0].scrollHeight);
     }
 
     function msgAdmin(nick, message) {
@@ -34,32 +33,8 @@ $(document).ready(function () {
             '</div>';
         messagesAdmin
             .append(msg)
-            .scrollTop(messagesAdmin[0].scrollHeight);
     }
 
-    function msg_system(message) {
-        var m = '<div class="msg system">' + safe(message) + '</div>';
-        messages
-            .append(m)
-            .scrollTop(messages[0].scrollHeight);
-    }
-
-    function msg_systemAdmin(message) {
-        var msg = '<div class="msg system">' + safe(message) + '</div>';
-        messagesAdmin
-            .append(msg)
-            .scrollTop(messagesAdmin[0].scrollHeight);
-    }
-
-    socket.on('connecting', function () {
-        msg_system('Соединение...');
-        msg_systemAdmin('Connect...')
-    });
-
-    socket.on('connect', function () {
-        msg_system('Соединение установленно!');
-        msg_systemAdmin('Соединение установленно!');
-    });
 
     socket.on('message', function (data) {
         msg(data.name, data.message);
