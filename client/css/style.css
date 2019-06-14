@@ -180,6 +180,15 @@ body {
     font-size: 15px;
     line-height: 25px;
     color: #000000;
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    height: 183px;
+    margin: 0 auto;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .review__slide-gallery {
