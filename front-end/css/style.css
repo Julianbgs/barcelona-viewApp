@@ -519,6 +519,11 @@ body {
         display: block;
         width: 300px;
     }
+
+    .chat__wrap {
+        margin: 0;
+        width: 100%;
+    }
 }
 
 @font-face {
