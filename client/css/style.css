@@ -321,6 +321,7 @@ body {
     display: flex;
     width: 100%;
     background-color: white;
+    padding-top: 15px;
 }
 
 .chat__top-box {
@@ -329,11 +330,12 @@ body {
     justify-content: space-between;
 }
 
-.chat__top-box-img {
+.chat__top-box--img {
     width: 44px;
     height: 44px;
     overflow: hidden;
-    margin-top: 12px;
+    margin-top: 7px;
+    margin-left: 14px;
 }
 
 .chat__top-box--img img {
@@ -358,10 +360,25 @@ body {
 }
 
 .chat__top-user--role {
+    position: relative;
     font-family: KievitPro;
     font-size: 13px;
     line-height: 17px;
     color: #FF4641;
+    margin-left: 10px;
+}
+
+.chat__top-user--role::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 8px;
+    height: 10px;
+    top: 3px;
+    left: -10px;
+    background-image: url("../img/flag.png");
+    background-repeat: no-repeat;
+
 
 }
 
