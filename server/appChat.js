@@ -10,6 +10,7 @@ var http = require('http');
 var server = http.createServer(app);
 var io = require('socket.io').listen(server, options);
 server.listen(PORT);
+console.log('Server start on port : ' + PORT);
 
 app.use('/static', express.static(__dirname + '/static'));
 

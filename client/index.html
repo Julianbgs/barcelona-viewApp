@@ -5,7 +5,11 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 <section class="city">
@@ -31,12 +35,306 @@
             <h3 class="review__title"> Отзывы о Барселоне </h3>
             <div class="review__slider">
                 <div class="review__slide">
-                    <div class="review__slide-top">
-                        <img class="review__slide-top--img" src="img/slide-face.png">
-                        <p class="review__slide-top--title"> Наталья Полянская</p>
-                    </div>
+                    <div class="review__slide-elem">
+                        <div class="review__slide-top">
+                            <img class="review__slide-top--img" src="img/slide-face.png">
+                            <p class="review__slide-top--title"> Наталья Полянская</p>
+                        </div>
 
+                        <div class="review__slide-body">
+                            <h3 class="review__slide-body--title"><span class="review__text-color"> Барселона </span> —
+                                о
+                                городе :</h3>
+                            <p class="review__slide-body--descr">Барселона ‒ моя третья большая любовь, после Вены и
+                                Крита.
+                                Это город,
+                                в который я каждый раз возвращаюсь с огромным удовольствием, всем
+                                рекомендую хоть раз там
+                                побывать и осмотреть ...</p>
+                            <div class="review__slide-gallery">
+                                <a href="img/gallery-1.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-1.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-3.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-3.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-2.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-2.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-2.png" data-fancybox="image" class="review__slide-gallery--link">
+                                     <span class="review__slide-count">
+                                        +7
+                                    </span>
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-2.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-2.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-2.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-2.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-2.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-2.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-2.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-2.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-2.png" alt="gallery">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="review__slide-bottom">
+                            <p class="review__slide-bottom--date">Около 1 года назад</p>
+                            <p class="review__slide-bottom--comment">9 комментариев</p>
+                            <div class="review__like">
+                                <a href="#" class="review__like--link">
+                                    <img src="img/like.png" alt="like">
+                                </a>
+                                <span class="review__like--count">9</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="review__slide">
+                    <div class="review__slide-elem">
+                        <div class="review__slide-top">
+                            <img class="review__slide-top--img" src="img/slide-face.png">
+                            <p class="review__slide-top--title"> Наталья Полянская</p>
+                        </div>
+
+                        <div class="review__slide-body">
+                            <h3 class="review__slide-body--title"><span class="review__text-color"> Барселона </span> —
+                                о
+                                городе :</h3>
+                            <p class="review__slide-body--descr">Барселона ‒ моя третья большая любовь, после Вены и
+                                Крита.
+                                Это город,
+                                в который я каждый раз возвращаюсь с огромным удовольствием, всем
+                                рекомендую хоть раз там
+                                побывать и осмотреть ...</p>
+                            <div class="review__slide-gallery">
+                                <a href="img/gallery-1.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-1.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-3.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-3.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-2.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-2.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-2.png" data-fancybox="image" class="review__slide-gallery--link">
+                                     <span class="review__slide-count">
+                                        +7
+                                    </span>
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-2.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-2.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-2.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-2.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-2.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-2.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-2.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-2.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-2.png" alt="gallery">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="review__slide-bottom">
+                            <p class="review__slide-bottom--date">Около 1 года назад</p>
+                            <p class="review__slide-bottom--comment">3 комментариев</p>
+                            <div class="review__like">
+                                <a href="#" class="review__like--link">
+                                    <img src="img/like.png" alt="like">
+                                </a>
+                                <span class="review__like--count">7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review__slide">
+                    <div class="review__slide-elem">
+                        <div class="review__slide-top">
+                            <img class="review__slide-top--img" src="img/slide-face.png">
+                            <p class="review__slide-top--title"> Наталья Полянская</p>
+                        </div>
+
+                        <div class="review__slide-body">
+                            <h3 class="review__slide-body--title"><span class="review__text-color"> Барселона </span> —
+                                о
+                                городе :</h3>
+                            <p class="review__slide-body--descr">Барселона ‒ моя третья большая любовь, после Вены и
+                                Крита.
+                                Это город,
+                                в который я каждый раз возвращаюсь с огромным удовольствием, всем
+                                рекомендую хоть раз там
+                                побывать и осмотреть ...</p>
+                            <div class="review__slide-gallery">
+                                <a href="img/gallery-1.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-1.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-3.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-3.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-2.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-2.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-2.png" data-fancybox="image" class="review__slide-gallery--link">
+                                     <span class="review__slide-count">
+                                        +7
+                                    </span>
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-2.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-2.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-2.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-2.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-2.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-2.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-2.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-2.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-2.png" alt="gallery">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="review__slide-bottom">
+                            <p class="review__slide-bottom--date">Около 1 года назад</p>
+                            <p class="review__slide-bottom--comment">9 комментариев</p>
+                            <div class="review__like">
+                                <a href="#" class="review__like--link">
+                                    <img src="img/like.png" alt="like">
+                                </a>
+                                <span class="review__like--count">9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review__slide">
+                    <div class="review__slide-elem">
+                        <div class="review__slide-top">
+                            <img class="review__slide-top--img" src="img/slide-face.png">
+                            <p class="review__slide-top--title"> Наталья Полянская</p>
+                        </div>
+
+                        <div class="review__slide-body">
+                            <h3 class="review__slide-body--title"><span class="review__text-color"> Барселона </span> —
+                                о
+                                городе :</h3>
+                            <p class="review__slide-body--descr">Барселона ‒ моя третья большая любовь, после Вены и
+                                Крита.
+                                Это город,
+                                в который я каждый раз возвращаюсь с огромным удовольствием, всем
+                                рекомендую хоть раз там
+                                побывать и осмотреть ...</p>
+                            <div class="review__slide-gallery">
+                                <a href="img/gallery-1.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-1.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-3.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-3.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-2.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-2.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-2.png" data-fancybox="image" class="review__slide-gallery--link">
+                                     <span class="review__slide-count">
+                                        +7
+                                    </span>
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-2.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-2.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-2.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-2.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-2.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-2.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-2.png" alt="gallery">
+                                    </div>
+                                </a>
+                                <a href="img/gallery-2.png" data-fancybox="image" class="review__slide-gallery--link">
+                                    <div class="review__slide-gallery--img">
+                                        <img src="img/gallery-2.png" alt="gallery">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="review__slide-bottom">
+                            <p class="review__slide-bottom--date">Около 1 года назад</p>
+                            <p class="review__slide-bottom--comment">9 комментариев</p>
+                            <div class="review__like">
+                                <a href="#" class="review__like--link">
+                                    <img src="img/like.png" alt="like">
+                                </a>
+                                <span class="review__like--count">9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -68,6 +366,8 @@
 </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://localhost:8008/socket.io/socket.io.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/slick.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

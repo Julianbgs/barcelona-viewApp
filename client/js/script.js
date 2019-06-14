@@ -1,3 +1,11 @@
+//slider
+$('.review__slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1
+});
+//end script
+
 $(document).ready(function () {
     var socket = io.connect('http://localhost:8008');
     var name = 'Пётр';
